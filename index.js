@@ -91,6 +91,9 @@ client.on("guildMemberAdd", async (member) => {
     .setTitle("New Member")
     .setDescription(
       `**${member.displayName}** welcome to ${member.guild.name}, we now have ${member.guild.memberCount} members!`
+    )
+    .setImage(
+      "https://media.discordapp.net/attachments/945504344671924285/962135976447197274/WhatsApp_Image_2022-04-05_at_11.48.03.jpeg?width=498&height=498"
     );
   // sends a message to the channel
   Channel.send(welcome);
@@ -106,6 +109,9 @@ client.on("guildMemberRemove", async (member) => {
     .setTitle("A member left the server :(")
     .setDescription(
       `**${member.displayName}** has left ${member.guild.name}, we now have ${member.guild.memberCount} members!`
+    )
+    .setImage(
+      "https://media.discordapp.net/attachments/945504344671924285/962135976447197274/WhatsApp_Image_2022-04-05_at_11.48.03.jpeg?width=498&height=498"
     );
   // sends a message to the channel
   Channel.send(left);
