@@ -87,13 +87,13 @@ client.on("guildMemberAdd", async (member) => {
   const Channel = member.guild.channels.cache.get("961925447837437962"); //insert channel id that you want to send to
   //making embed
   const welcome = new MessageEmbed()
-    .setColor("AQUA")
+    .setColor("9BA3EB")
     .setTitle("New Member")
     .setDescription(
       `**${member.displayName}** welcome to ${member.guild.name}, we now have ${member.guild.memberCount} members!`
     )
     .setImage(
-      "https://media.discordapp.net/attachments/945504344671924285/962135976447197274/WhatsApp_Image_2022-04-05_at_11.48.03.jpeg?width=498&height=498"
+      "https://media.discordapp.net/attachments/864292225226899477/978840961398505552/logo_animated_welcome_1.gif?width=498&height=498"
     );
   // sends a message to the channel
   Channel.send(welcome);
